@@ -7,3 +7,7 @@ Utiliza:
 * Java 11
 * Spring Boot 2
 * Jasypt
+
+## Ejecución:
+
+`./mvnw -Dpassword=<jasypt.encryption.password> spring-boot:run`
