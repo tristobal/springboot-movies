@@ -3,8 +3,6 @@ package com.ido.movies.service;
 import com.ido.movies.domain.Movie;
 import com.ido.movies.domain.ParentResponse;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.core.ParameterizedTypeReference;
-import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -26,7 +24,7 @@ public class OmdbClient {
     }
 
     public List<Movie> getMovies(String title) {
-        return restTemplate.exchange(url, HttpMethod.GET, null, new ParameterizedTypeReference<ParentResponse>(){}, key, title)
+        return restTemplate.getForEntity(url, ParentResponse.class, key, title)
                 .getBody()
                 .getSearch();
     }
