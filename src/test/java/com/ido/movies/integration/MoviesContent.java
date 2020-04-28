@@ -46,7 +46,7 @@ public class MoviesContent {
                 .append("/")
                 .append(resource)
                 .append("?title=")
-                .append(title)
+                .append(title.replaceAll(" ", "+"))
                 .toString();
     }
 }
