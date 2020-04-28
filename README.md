@@ -9,6 +9,7 @@ Utiliza:
 * Jasypt 2
 * JUnit 5
 * Cucumber 5
+* ArchUnit
 
 ## Ejecución:
 
