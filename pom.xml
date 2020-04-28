@@ -45,6 +45,7 @@
 			<version>2.1</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- Dependencias Cucumber -->
 		<dependency>
 			<groupId>org.junit.vintage</groupId>
 			<artifactId>junit-vintage-engine</artifactId>
@@ -68,6 +69,14 @@
 			<artifactId>cucumber-spring</artifactId>
 			<version>5.6.0</version>
 		</dependency>
+		<!-- Dependencias ArchUnit -->
+		<dependency>
+			<groupId>com.tngtech.archunit</groupId>
+			<artifactId>archunit-junit5-api</artifactId>
+			<version>0.13.1</version>
+			<scope>test</scope>
+		</dependency>
+
 		<!--
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
