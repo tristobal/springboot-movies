@@ -16,6 +16,11 @@
 
 	<properties>
 		<java.version>11</java.version>
+		<jasypt.version>2.1.2</jasypt.version>
+		<hamcrest.version>2.1</hamcrest.version>
+		<junit.vintage.version>5.5.2</junit.vintage.version>
+		<cucumber.version>5.6.0</cucumber.version>
+		<archunit.version>0.13.1</archunit.version>
 	</properties>
 
 	<dependencies>
@@ -37,37 +42,37 @@
 		<dependency>
 			<groupId>com.github.ulisesbocchio</groupId>
 			<artifactId>jasypt-spring-boot-starter</artifactId>
-			<version>2.1.2</version>
+			<version>${jasypt.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.hamcrest</groupId>
 			<artifactId>hamcrest-library</artifactId>
-			<version>2.1</version>
+			<version>${hamcrest.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<!-- Dependencias Cucumber -->
 		<dependency>
 			<groupId>org.junit.vintage</groupId>
 			<artifactId>junit-vintage-engine</artifactId>
-			<version>5.5.2</version>
+			<version>${junit.vintage.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-junit</artifactId>
-			<version>5.6.0</version>
+			<version>${cucumber.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java8</artifactId>
-			<version>5.6.0</version>
+			<version>${cucumber.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-spring</artifactId>
-			<version>5.6.0</version>
+			<version>${cucumber.version}</version>
 		</dependency>
 		<!-- Dependencias ArchUnit -->
 		<dependency>
@@ -76,21 +81,12 @@
 			<version>0.13.1</version>
 			<scope>test</scope>
 		</dependency>
-
-		<!--
+		<!-- Dependencias SonarQube -->
 		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-api</artifactId>
-			<version>5.4.2</version>
-			<scope>test</scope>
+			<groupId>org.sonarsource.scanner.maven</groupId>
+			<artifactId>sonar-maven-plugin</artifactId>
+			<version>3.7.0.1746</version>
 		</dependency>
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-engine</artifactId>
-			<version>5.4.2</version>
-			<scope>test</scope>
-		</dependency>
-		-->
 	</dependencies>
 
 	<build>
