@@ -15,6 +15,7 @@ Utiliza:
 
 `./mvnw -Dpassword=<jasypt.encryption.password> spring-boot:run`
 
+Jasypt es usado para encriptar la llave de OMDb API. Dicha encriptación se realizó como sigue: `java -cp ~/.m2/repository/org/jasypt/jasypt/1.9.3/jasypt-1.9.3.jar org.jasypt.intf.cli.JasyptPBEStringEncryptionCLI input="<LLAVE_OMDB>" password=<jasypt.encryption.password> algorithm=PBEWithMD5AndDES`
 
 
 ## JUnit 5
