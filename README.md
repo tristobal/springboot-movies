@@ -35,3 +35,12 @@ Si se desea realizar *debug* de los test (unitarios o de integración):
 `./mvnw -Dpassword=<jasypt.encryption.password>  -Dmaven.surefire.debug test`
 
 Luego en el IDE *escuchar* el puerto 5005. En IntelliJ: Edit Configurations -> + -> Remote -> Ok.
+
+## Ejecución SonarQube
+
+```
+./mvnw -Dpassword=<jasypt.encryption.password> clean package
+./mvnw -Dpassword=<jasypt.encryption.password> sonar:sonar
+```
+
+Se asume que se tiene una instancia local de Sonar con la configuración por defecto.

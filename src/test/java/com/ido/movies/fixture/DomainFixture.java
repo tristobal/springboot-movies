@@ -16,6 +16,7 @@ public class DomainFixture {
                 .withImdbID("tt9335498")
                 .withTitle("Demon Slayer: Kimetsu No Yaiba")
                 .withType(Type.SERIES)
+                .withYear("2019-")
                 .withPoster("https://m.media-amazon.com/images/M/MV5BZjZjNzI5MDctY2Y4YS00NmM4LTljMmItZTFkOTExNGI3ODRhXkEyXkFqcGdeQXVyNjc3MjQzNTI@._V1_SX300.jpg")
                 .build());
     }
