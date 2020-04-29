@@ -33,8 +33,8 @@ class OmdbClientTest {
     @BeforeEach
     void setUp() {
         client = new OmdbClient(restTemplate);
-        ReflectionTestUtils.setField(client, "key", "key");
-        ReflectionTestUtils.setField(client, "url", "url");
+        ReflectionTestUtils.setField(client, "key", "llave");
+        ReflectionTestUtils.setField(client, "url", "direccion");
     }
 
     @Test
@@ -48,4 +48,5 @@ class OmdbClientTest {
 
         assertThat(responseEntity.getBody().getSearch(), is(actualResponse));
     }
+
 }

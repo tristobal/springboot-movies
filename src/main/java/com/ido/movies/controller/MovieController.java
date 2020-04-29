@@ -12,7 +12,7 @@ import java.util.List;
 @RestController
 public class MovieController {
 
-    private OmdbClient client;
+    private final OmdbClient client;
 
     public MovieController(OmdbClient client) {
         this.client = client;

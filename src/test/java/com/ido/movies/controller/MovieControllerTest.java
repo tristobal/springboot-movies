@@ -1,18 +1,15 @@
 package com.ido.movies.controller;
 
 import com.ido.movies.domain.Movie;
-import com.ido.movies.domain.Type;
-import com.ido.movies.domain.builder.MovieBuilder;
 import com.ido.movies.fixture.DomainFixture;
 import com.ido.movies.service.OmdbClient;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import java.util.Collections;
 import java.util.List;
 
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -42,6 +39,5 @@ class MovieControllerTest {
 
         assertThat(expectedMovies, is(actualMovies));
     }
-
 
 }

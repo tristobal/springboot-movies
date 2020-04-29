@@ -1,8 +1,6 @@
 package com.ido.movies.integration;
 
 import com.ido.movies.MoviesApplication;
-import com.ido.movies.domain.Movie;
-import com.ido.movies.domain.ParentResponse;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.web.server.LocalServerPort;
