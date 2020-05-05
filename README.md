@@ -37,6 +37,12 @@ Si se desea realizar *debug* de los test (unitarios o de integración):
 
 Luego en el IDE *escuchar* el puerto 5005. En IntelliJ: Edit Configurations -> + -> Remote -> Ok.
 
+### Ejecución PITest
+    
+PITest generará un reporte cuando se ejecuta la fase *test* de Maven.
+
+Ruta: `springboot-movies/target/pit-reports/`
+
 ## Ejecución SonarQube
 
 ```
@@ -45,13 +51,3 @@ Luego en el IDE *escuchar* el puerto 5005. En IntelliJ: Edit Configurations -> +
 ```
 
 Se asume que se tiene una instancia local de Sonar con la configuración por defecto.
-
-## Ejecución PITest
-
-```
-./mvnw -Dpassword=<jasypt.encryption.password> clean package
-```
-
-PITest generará un reporte cuando se ejecuta la fase *Test* de Maven.
-
-Ruta: springboot-movies/target/pit-reports/
