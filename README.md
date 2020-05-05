@@ -45,3 +45,13 @@ Luego en el IDE *escuchar* el puerto 5005. En IntelliJ: Edit Configurations -> +
 ```
 
 Se asume que se tiene una instancia local de Sonar con la configuración por defecto.
+
+## Ejecución PITest
+
+```
+./mvnw -Dpassword=<jasypt.encryption.password> clean package
+```
+
+PITest generará un reporte cuando se ejecuta la fase *Test* de Maven.
+
+Ruta: springboot-movies/target/pit-reports/
